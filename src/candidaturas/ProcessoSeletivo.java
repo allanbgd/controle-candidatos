@@ -17,7 +17,7 @@ public class ProcessoSeletivo {
 	
 	}
 	
-	static void entrandoEmContato (String candidato ) {
+	static void entrandoEmContato (String[] candidatos ) {
 		
 		int tentativasRealizadas = 1;
 		boolean continuaTentando = true;
@@ -35,9 +35,9 @@ public class ProcessoSeletivo {
 			
 		}while(continuaTentando && tentativasRealizadas < 3);
 		
-		if(atendeu)System.out.println("CONSEGUIMOS CONTATO COM O CANDIDATO " + candidato + " NA "+ tentativasRealizadas + "TENTATIVA");
+		if(atendeu)System.out.println("CONSEGUIMOS CONTATO COM O CANDIDATO " + candidatos + " NA "+ tentativasRealizadas + "TENTATIVA");
 		
-		else System.out.println("NÃO CONSEGUIMOS CONTATO COM O CANDIDATO " + candidato + ", NÚMERO MAXIMO TENTATIVAS "+ tentativasRealizadas);
+		else System.out.println("NÃO CONSEGUIMOS CONTATO COM O CANDIDATO " + candidatos + ", NÚMERO MAXIMO TENTATIVAS "+ tentativasRealizadas);
 	}
 	
 	static boolean atender() {
